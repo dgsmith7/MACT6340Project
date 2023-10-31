@@ -8,6 +8,10 @@ app.use(express.static("public"));
 //   res.send("Hello World!");
 // });
 
+// app.post("/mail", (req, res) => {
+//   console.log("mail button clicked");
+// });
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
