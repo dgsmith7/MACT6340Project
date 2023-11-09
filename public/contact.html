@@ -18,78 +18,80 @@
 </head>
 
 <body>
-  <section>
-    <div class="divider"></div>
-    <div id="contact-headline" class="beginning pt-5 m-2 text-light text-center">
-      <h1>Give me a shout!</h1>
-      <p>Please use the form to ask a question or share a
-        comment.</p>
-    </div>
-  </section>
-  <setion>
-    <div class="row justify-content-center text-start form-holder">
-      <div class="col-10">
-        <form id="contact-form" class="p-3 needs-validation rounded" novalidate>
-          <div class="row justify-content-start mb-2">
-            <div class="row">
-              <!-- First name -->
-              <div class="col-4 m-2">
-                <label for="contact-first" class="form-label">First name</label>
-                <input type="text" class="form-control" id="contact-first" required>
-                <div class="invalid-feedback">
-                  Please enter your first name.
+  <container>
+    <section>
+      <div class="divider"></div>
+      <div id="contact-headline" class="beginning pt-5 m-2 text-light text-center">
+        <h1>Give me a shout!</h1>
+        <p>Please use the form to ask a question or share a
+          comment.</p>
+      </div>
+    </section>
+    <setion>
+      <div class="row justify-content-center text-start form-holder">
+        <div class="col-10">
+          <form id="contact-form" class="p-3 needs-validation rounded" novalidate>
+            <div class="row justify-content-start mb-2">
+              <div class="row">
+                <!-- First name -->
+                <div class="col-4 m-2">
+                  <label for="contact-first" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="contact-first" required>
+                  <div class="invalid-feedback">
+                    Please enter your first name.
+                  </div>
                 </div>
-              </div>
-              <!-- Middle Initial -->
-              <div class="col-1 my-2 mx-5">
-                <label for="contact-middle" class="form-label">Middle</label>
-                <input type="text" class="form-control" id="contact-middle">
-              </div>
-              <!-- Last name-->
-              <div class="col-4 m-2">
-                <label for="contact-last" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="contact-last" required>
-                <div class="invalid-feedback">
-                  Please enter your last name.
+                <!-- Middle Initial -->
+                <div class="col-1 my-2 mx-5">
+                  <label for="contact-middle" class="form-label">Middle</label>
+                  <input type="text" class="form-control" id="contact-middle">
                 </div>
-              </div>
-            </div>
-            <!-- Email address -->
-            <div class="row">
-              <div class="col-7 m-2">
-                <label for="contact-email-addr" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="contact-email-addr" aria-describedby="contact-email-help"
-                  placeholder="name@example.com" required>
-                <div class="invalid-feedback" id="contact-email-help">
-                  Format should be name@example.com.
-                </div>
-              </div>
-            </div>
-            <!-- Question and/or comment -->
-            <div class="row">
-              <div class="col m-2">
-                <label for="contact-question" class="form-label">Question or comment</label>
-                <div class="input-group has-validation">
-                  <textarea class="form-control" id="contact-question" rows="7" maxlength="1000"
-                    aria-describedby="contact-question-help" required></textarea>
-                  <div id="contact-question-help" class="invalid-feedback">
-                    Please enter your question or comment up to 1000 characters.
+                <!-- Last name-->
+                <div class="col-4 m-2">
+                  <label for="contact-last" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="contact-last" required>
+                  <div class="invalid-feedback">
+                    Please enter your last name.
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col m-2">
-              <div>
-                <button id="send-contact" name="sendContact" class="btn btn-primary" type="submit">Submit form</button>
-                <span class="m-2" id="contact-button-response"></span>
-                <span class="m-2" id="result"></span>
+              <!-- Email address -->
+              <div class="row">
+                <div class="col-7 m-2">
+                  <label for="contact-email-addr" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="contact-email-addr" aria-describedby="contact-email-help"
+                    placeholder="name@example.com" required>
+                  <div class="invalid-feedback" id="contact-email-help">
+                    Format should be name@example.com.
+                  </div>
+                </div>
               </div>
-            </div>
-        </form>
+              <!-- Question and/or comment -->
+              <div class="row">
+                <div class="col m-2">
+                  <label for="contact-question" class="form-label">Question or comment</label>
+                  <div class="input-group has-validation">
+                    <textarea class="form-control" id="contact-question" rows="7" maxlength="1000"
+                      aria-describedby="contact-question-help" required></textarea>
+                    <div id="contact-question-help" class="invalid-feedback">
+                      Please enter your question or comment up to 1000 characters.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col m-2">
+                <div>
+                  <button id="send-contact" name="sendContact" class="btn btn-primary" type="submit">Submit
+                    form</button>
+                  <span class="m-2" id="contact-button-response"></span>
+                  <span class="m-2" id="result"></span>
+                </div>
+              </div>
+          </form>
+        </div>
       </div>
-    </div>
-  </setion>
-
+    </setion>
+  </container>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
