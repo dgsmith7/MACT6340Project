@@ -1,2 +1,3 @@
-select * from projects;
+drop table projects;
+
 

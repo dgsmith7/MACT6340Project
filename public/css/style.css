@@ -17,6 +17,26 @@ body {
   border: 1px solid red;
 } */
 
+@keyframes fadeInAnimation {
+  /*for div fade-in */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+card {
+  min-height: 400px;
+}
+
+.fadein {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .area {
   min-height: 750px;
 }

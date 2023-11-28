@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <title>Personal NFT Mint Projects</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <title>Personal NFT Mint</title>
   <meta name="author" content="David G. Smith">
-  <meta name="description" content="Projects page for personal NFT mint.">
+  <meta name="description" content="A personal NFT mint for an artist.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
@@ -19,13 +19,63 @@
 
 <body>
   <%- include('header'); %>
-  <div class="container">
-    <div class="spacer"></div>
-    <div>Project Page for <%=which %></div>
+  <div class="spacer">
   </div>
+  <main>
+    <div class="container">
+    </div>
+    <section>
+      <div class="row text-center justify-content-center">
+        <div class="col-10 mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mt-4">
+              <div class="card m-2">
+                <img src=<%=`.${project.img_url}`  %> class="card-img-top" alt="..." />
+                <div>
+                  <div class="card-title">
+                    <h2><%=project.project_name  %></h2>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a id="mint-button" class="btn btn-primary">Mint</a>
+                </div>
+              </div>
+            </div>
+            <div class="cal-10 col-md-6 mt-2 text-start">
+              <p>
+              <h3 class="topic">Project name: </h3><%=project.project_name  %></p>
+              <p>
+              <h3 class="topic">Project description: </h3><%=project.project_description  %></p>
+              <div class="row">
+                <div class="col-5">
+                  <h3 class="topic">Price in ETH: </h3><%=project.price_eth  %>
+                </div>
+                <div class="col-5">
+                  <h3 class="topic">Quantity: </h3><%=project.quantity  %>
+                </div>
+              </div>
+              <p>
+              <h3 class="topic">Opening date: </h3><%=project.open_date_gmt  %></p>
+              <p>
+              <h3 class="topic">Royalties: </h3>The artist will get <%=project.royalty_percent  %>% of secondary sales
+              </p>
+              <p>
+              <h3 class="topic">Status: </h3>Active - 0 of <%=project.quantity  %> minted</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <div class="container-fluid">
     <%- include('footer'); %>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
   <script type="module" src="./js/index.js"></script>
 </body>
 

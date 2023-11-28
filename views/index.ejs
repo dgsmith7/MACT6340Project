@@ -18,12 +18,8 @@
 </head>
 
 <body>
-  <!-- <div id="testButton" class="btn btn-warning">Click me</div> -->
   <!-- Header area -->
-
   <%- include('header'); %>
-
-
   <main>
     <!-- Splash page -->
     <section>
@@ -46,65 +42,57 @@
           <div class="spacer"></div>
           <div class="row justify-content-center">
             <div class="col-10 text-center justify-content-center">
-              <p class="display-3">Feature Project</p>
+              <p class="display-3">Featured Project</p>
               <div class="row">
-                <div id="featuredImage" class="col-7 m-2">
-                  <img class="me-auto img-fluid" src="./images/satellite.jpg" role="img" alt="featured project image">
+                <div class="col-5">
+                  <%- include('projectCard', {image: featuredProject.img_url, name: featuredProject.project_name, ident: featuredProject.id}); %>
                 </div>
-                <div id="featuredInfo" class="text-start col-3 m-2 text-light">
-                  <div>Name: Satellite</div>
-                  <div>Description: Generative images of imaginary satellites in imaginary spaces.</div>
-                  <div>Editions: 64</div>
-                  <div>Price: 2 MATIC</div>
-                  <div>Opens: 1 October 2023</div>
-                  <div><a href="/project/1"><button id="goToFeaturedProjectButton" type="button"
-                        class="m-2 btn btn-outline-light">Go to this
-                        project</button></a></div>
-                  <div><a href="/projects"><button id="allProejctsButton" type="button"
-                        class="m-2 btn btn-outline-light">See all
-                        projects</button></a></div>
+                <div class="col-5">
+                  <div class="m-5">
+                    <a href="/projects"><button id="allProjectsButton" type="button"
+                        class="m-2 btn btn-outline-light">See all projects</button></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+    </div>
+    </section>
 
-      <!-- About me area -->
-      <section>
-        <div id="about" class="area">
-          <div class="spacer"></div>
-          <div class="row justify-content-center">
-            <div class="col-10 text-center justify-content-center">
-              <p class="display-3">About the Artist</p>
-              <div class="row">
-                <div id="featuredInfo" class="col-5 m-2 mt-5 text-light text-end justify-content-end">
-                  <div>Et ea labore laboris amet ullamco ut non duis duis. Culpa culpa nulla deserunt occaecat. In quis
-                    ex
-                    anim ullamco officia irure consequat quis ut et elit eiusmod aute. Occaecat minim anim reprehenderit
-                    nulla mollit. Nulla commodo cillum eiusmod magna. Esse velit pariatur exercitation mollit quis velit
-                    tempor excepteur nulla ad irure proident eiusmod. Aute sit laborum excepteur eiusmod fugiat id
-                    aliquip
-                    in laboris sint proident amet incididunt.</div>
-                  <div><a href="/contact"><button id="goToContactPageButton" type="button"
-                        class="m-2 btn btn-outline-light">Contact
-                        me</button></a></div>
-                </div>
-                <div id="featuredImage" class="col-5 m-2 justify-content-start">
-                  <img class="me-auto img-fluid" src="./images/davidGailSmith.png" role="img" alt="artist image">
-                </div>
+    <!-- About me area -->
+    <section>
+      <div id="about" class="area">
+        <div class="spacer"></div>
+        <div class="row justify-content-center">
+          <div class="col-10 text-center justify-content-center">
+            <p class="display-3">About the Artist</p>
+            <div class="row">
+              <div id="featuredInfo" class="col-5 m-2 mt-5 text-light text-end justify-content-end">
+                <div>Et ea labore laboris amet ullamco ut non duis duis. Culpa culpa nulla deserunt occaecat. In quis
+                  ex
+                  anim ullamco officia irure consequat quis ut et elit eiusmod aute. Occaecat minim anim reprehenderit
+                  nulla mollit. Nulla commodo cillum eiusmod magna. Esse velit pariatur exercitation mollit quis velit
+                  tempor excepteur nulla ad irure proident eiusmod. Aute sit laborum excepteur eiusmod fugiat id
+                  aliquip
+                  in laboris sint proident amet incididunt.</div>
+                <div><a href="/contact"><button id="goToContactPageButton" type="button"
+                      class="m-2 btn btn-outline-light">Contact
+                      me</button></a></div>
+              </div>
+              <div id="featuredImage" class="col-5 m-2 justify-content-start">
+                <img class="me-auto img-fluid" src="./images/davidGailSmith.png" role="img" alt="artist image">
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     </div>
   </main>
 
   <!-- Footer area -->
-  <div class="container-fluid">
-    <%- include('footer'); %>
-  </div>
+  <%- include('footer'); %>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
