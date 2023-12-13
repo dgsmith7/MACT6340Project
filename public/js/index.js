@@ -14,7 +14,7 @@
     await window.ethereum
       .request({ method: "eth_requestAccounts" })
       .then((data) => {
-        userAddress = data[0];
+        let userAddress = data[0];
         let walletString =
           userAddress.substring(0, 5) + "..." + userAddress.substring(38, 42);
         connect.innerHTML = walletString;

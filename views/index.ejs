@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -26,23 +26,22 @@
       <div class="container-fluid">
         <div id="splash" class="area">
           <div class="spacer"></div>
-          <div id="hero-text" class="position-absolute top-50 start-50 translate-middle text-light text-center">
+          <div id="hero-text" class="position-absolute top-50 start-50 translate-middle text-dark text-center">
             <h1 class="display-1">David G. Smith</h1>
-            <h2>Visual Artist</h2>
+            <h2 class="display-3">Visual Artist</h2>
             <p>Generative Art NFT Project Collection</p>
           </div>
         </div>
       </div>
     </section>
-
-    <div class="container">
-      <!-- Featured project area -->
-      <section>
+    <section>
+      <div class="container">
+        <!-- Featured project area -->
         <div id="featured" class="area">
           <div class="spacer"></div>
           <div class="row justify-content-center">
             <div class="col-10 text-center justify-content-center">
-              <p class="display-3">Featured Project</p>
+              <h3 class="display-3">Featured Project</h3>
               <div class="row">
                 <div class="col-5">
                   <%- include('projectCard', {image: featuredProject.img_url, name: featuredProject.project_name, ident: featuredProject.id}); %>
@@ -50,14 +49,14 @@
                 <div class="col-5">
                   <div class="m-5">
                     <a href="/projects"><button id="allProjectsButton" type="button"
-                        class="m-2 btn btn-outline-light">See all projects</button></a>
+                        class="m-2 btn btn-outline-dark">See all projects</button></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </section>
 
     <!-- About me area -->
@@ -66,9 +65,9 @@
         <div class="spacer"></div>
         <div class="row justify-content-center">
           <div class="col-10 text-center justify-content-center">
-            <p class="display-3">About the Artist</p>
+            <h3 class="display-3">About the Artist</h3>
             <div class="row">
-              <div id="featuredInfo" class="col-5 m-2 mt-5 text-light text-end justify-content-end">
+              <div id="featuredInfo" class="col-5 m-2 mt-5 text-dark text-end justify-content-end">
                 <div>Et ea labore laboris amet ullamco ut non duis duis. Culpa culpa nulla deserunt occaecat. In quis
                   ex
                   anim ullamco officia irure consequat quis ut et elit eiusmod aute. Occaecat minim anim reprehenderit
@@ -77,7 +76,7 @@
                   aliquip
                   in laboris sint proident amet incididunt.</div>
                 <div><a href="/contact"><button id="goToContactPageButton" type="button"
-                      class="m-2 btn btn-outline-light">Contact
+                      class="m-2 btn btn-outline-dark">Contact
                       me</button></a></div>
               </div>
               <div id="featuredImage" class="col-5 m-2 justify-content-start">
