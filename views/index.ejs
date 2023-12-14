@@ -26,9 +26,9 @@
       <div class="container-fluid">
         <div id="splash" class="area">
           <div class="spacer"></div>
-          <div id="hero-text" class="position-absolute top-50 start-50 translate-middle text-dark text-center">
-            <h1 class="display-1">David G. Smith</h1>
-            <h2 class="display-3">Visual Artist</h2>
+          <div id="hero-text" class="position-absolute top-50 start-50 translate-middle text-light text-center">
+            <h1 class="display-3 display-md-1">David G. Smith</h1>
+            <h2 class="display-5 display-md-3">Visual Artist</h2>
             <p>Generative Art NFT Project Collection</p>
           </div>
         </div>
@@ -43,10 +43,10 @@
             <div class="col-10 text-center justify-content-center">
               <h3 class="display-3">Featured Project</h3>
               <div class="row">
-                <div class="col-5">
+                <div class="col-12 col-md-6">
                   <%- include('projectCard', {image: featuredProject.img_url, name: featuredProject.project_name, ident: featuredProject.id}); %>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-md-4">
                   <div class="m-5">
                     <a href="/projects"><button id="allProjectsButton" type="button"
                         class="m-2 btn btn-outline-dark">See all projects</button></a>
@@ -64,11 +64,12 @@
       <div id="about" class="area">
         <div class="spacer"></div>
         <div class="row justify-content-center">
-          <div class="col-10 text-center justify-content-center">
+          <div class="col-12 text-center justify-content-center">
             <h3 class="display-3">About the Artist</h3>
-            <div class="row">
-              <div id="featuredInfo" class="col-5 m-2 mt-5 text-dark text-end justify-content-end">
-                <div>Et ea labore laboris amet ullamco ut non duis duis. Culpa culpa nulla deserunt occaecat. In quis
+            <div class="row justify-content-center">
+              <div id="featuredInfo" class="col-12 col-md-5 mt-5 text-dark text-end justify-content-end">
+                <div class="m-2">Et ea labore laboris amet ullamco ut non duis duis. Culpa culpa nulla deserunt
+                  occaecat. In quis
                   ex
                   anim ullamco officia irure consequat quis ut et elit eiusmod aute. Occaecat minim anim reprehenderit
                   nulla mollit. Nulla commodo cillum eiusmod magna. Esse velit pariatur exercitation mollit quis velit
@@ -79,7 +80,7 @@
                       class="m-2 btn btn-outline-dark">Contact
                       me</button></a></div>
               </div>
-              <div id="featuredImage" class="col-5 m-2 justify-content-start">
+              <div id="featuredImage" class="col-12 col-md-5 m-1 justify-content-start">
                 <img class="me-auto img-fluid" src="./images/davidGailSmith.png" role="img" alt="artist image">
               </div>
             </div>

@@ -22,22 +22,17 @@
   <main>
     <div class="spacer"></div>
     <h1 class="display-5 justify-content-center text-center">Projects</h1>
-
     <div class="mb-5">
       <div class="row">
-        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 g-3 text-center justify-content-center">
-
-
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 text-center justify-content-center">
           <% projectArray.forEach((item, index) => {%>
           <div class="col-10">
             <%- include('projectCard', {image: item.img_url, name: item.project_name, ident: item.id}); %>
           </div>
           <% }); %>
-
         </div>
       </div>
     </div>
-
   </main>
   <%- include('footer'); %>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
