@@ -3,6 +3,19 @@ import * as utils from "./utils/utils.js";
 import * as db from "./utils/database.js";
 import dotenv from "dotenv";
 dotenv.config();
+import cors from "cors";
+import helmet from "helmet";
+app.use(cors());
+corsOptions.methods = ["GET", "POST"];
+app.use(helmet());
+// const cspConfig = {
+//   directives: {
+//     defaultSrc: ["'self'", "https://example.com"],
+//     // ...other CSP directives matching your app's needs.
+//   },
+// };
+// app.use(helmet.contentSecurityPolicy(cspConfig));
+
 let projects = [];
 
 const app = express();
