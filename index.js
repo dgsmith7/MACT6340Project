@@ -11,7 +11,7 @@ let mints = [];
 
 const app = express();
 app.use(cors());
-const port = 3001;
+const port = 3000;
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.static("public"));
