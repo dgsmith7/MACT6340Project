@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A personal NFT mint for an artist",
   "type": "module",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon app.js",
@@ -15,7 +15,8 @@
     "url": "git+https://github.com/dgsmith7/MACT6340Project.git"
   },
   "engines": {
-    "node": "21.4.0"
+    "node": "21.4.0",
+    "npm": "10.2.5"
   },
   "author": "David G. Smith",
   "license": "MIT",
