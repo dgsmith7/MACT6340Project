@@ -14,6 +14,9 @@
     "type": "git",
     "url": "git+https://github.com/dgsmith7/MACT6340Project.git"
   },
+  "engines": {
+    "node": "21.4.0"
+  },
   "author": "David G. Smith",
   "license": "MIT",
   "bugs": {
