@@ -1,13 +1,16 @@
-<div class="card m-2 h-100fadein">
+<div class="card m-2 h-100 fadein">
   <img src="<%=image %>" class="card-img-top" alt="An image of the <%= name %> project">
-  <div>
+  <div class="h-100">
     <div class="card-title col text-center">
-      <h3>
-        <%= name %>
-      </h3>
+      <p class="h4 m-2">
+        <strong>
+          <%= name %>
+        </strong>
+      </p>
     </div>
   </div>
   <div class="card-footer">
-    <a href="/project/<%= ident %>" class="btn btn-primary">Project Profile</a>
+    <div id="id-holder" class="id-holder d-none"><%= ident %></div>
+    <a href="<%= link %>" class="project-link btn btn-primary">Project Profile</a>
   </div>
 </div>

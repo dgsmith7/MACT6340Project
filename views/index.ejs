@@ -43,14 +43,18 @@
             <div class="col-10 text-center justify-content-center">
               <h3 class="display-3">Featured Project</h3>
               <div class="row">
-                <div class="col-12 col-md-6">
-                  <%- include('projectCard', {image: featuredProject.img_url, name: featuredProject.project_name, ident: featuredProject.id}); %>
+                <div id="project-holder" class="col-12 col-md-5">
+                  <% let link ="/project/"+(featuredProject.id) %>
+                  <%- include('projectCard', {image: featuredProject.img_url, name: featuredProject.project_name, ident: featuredProject.id, link: link} ); %>
                 </div>
                 <div class="col-12 col-md-4">
                   <div class="m-5">
                     <a href="/projects"><button id="allProjectsButton" type="button"
                         class="m-2 btn btn-outline-dark">See all projects</button></a>
                   </div>
+                  <div id="contracts" class="d-none"><%= contracts %></div>
+                  <div id="mints" class="d-none"><%= mints %></div>
+                  <div id="projects" class="d-none"><%= JSON.stringify(projects) %></div>
                 </div>
               </div>
             </div>
@@ -62,8 +66,8 @@
     <!-- About me area -->
     <section>
       <div id="about" class="area">
-        <div class="spacer"></div>
-        <div class="row justify-content-center">
+        <div class="spacer border-bottom"></div>
+        <div class="row justify-content-center mt-5">
           <div class="col-12 text-center justify-content-center">
             <h3 class="display-3">About the Artist</h3>
             <div class="row justify-content-center">
