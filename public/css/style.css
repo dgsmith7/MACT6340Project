@@ -47,9 +47,10 @@ card {
 
 #splash {
   min-height: 800px;
-  background: url("/images/DeepDreamTwoPaintings.jpeg");
+  background: url("/images/processor.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  color: #ce49ca;
 }
